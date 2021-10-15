@@ -94,7 +94,7 @@ class _CalState extends State<Cal> {
                     child: RaisedButton(
                       padding: EdgeInsets.all(7),
                       onPressed: () => buttonPressed("C"),
-                      color: Colors.purple[900],
+                      color: Colors.purple[800],
                       child: Text("C",style: TextStyle(fontSize: 34,color: Colors.white)),
                     ),
                   ),
@@ -114,7 +114,7 @@ class _CalState extends State<Cal> {
                 children: <Widget>[
                   button("1", 2.5 ,Colors.cyanAccent),
                   button("2", 2.5 ,Colors.cyanAccent),
-                  button("3", 2.5 ,Colors.cyanAccent),
+                  button("3", 2.5 ,Colors.cyan),
                   button("+", 2.5 ,Colors.pinkAccent),
                 ],
               ),
@@ -138,7 +138,7 @@ class _CalState extends State<Cal> {
               Row(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.all(15.5),
+                    padding: EdgeInsets.all(15.50),
                     color: Colors.cyanAccent,
                     width: MediaQuery.of(context).size.width* 0.1 *2.5,
                     child: GestureDetector(
