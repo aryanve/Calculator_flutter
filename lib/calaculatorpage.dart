@@ -40,7 +40,7 @@ class _CalState extends State<Cal> {
           equation = "0";
         }
       } else if(buttonText == "="){
-        equationFontSize =36;
+        equationFontSize =37;
         resultFontSize =52;
 
         expression = equation;
@@ -76,7 +76,7 @@ class _CalState extends State<Cal> {
         children: <Widget>[
           Container(
             alignment: Alignment.centerRight,
-            padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+            padding: EdgeInsets.fromLTRB(11, 11, 10, 0),
             child: Text(equation, style: TextStyle(fontSize: equationFontSize),),
           ),
           Container(
@@ -150,11 +150,11 @@ class _CalState extends State<Cal> {
                           setState(() {
                             equation = equation + ".";
                           }),
-                      child: Text(" 0 ." , style: TextStyle(fontSize: 48,color: Colors.black))
+                      child: Text(" 0 ." , style: TextStyle(fontSize: 44,color: Colors.black))
                     ),
                   ),
-                  button("=", 5 ,Colors.pinkAccent),
-                  button("÷", 2.5 ,Colors.pinkAccent),
+                  button("=", 5 ,Colors.pink),
+                  button("÷", 2.5 ,Colors.pink),
                 ],
               ),
             ],),
