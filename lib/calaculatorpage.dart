@@ -7,7 +7,7 @@ class _CalState extends State<Cal> {
     return Container(
       width: MediaQuery.of(context).size.width* 0.1 *buttonWidth,
       child: RaisedButton(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(22),
           color: buttonColor,
           onPressed:() => buttonPressed(buttonText),
           child:Text(buttonText, style: TextStyle(fontSize: 40,color: Colors.black),)
@@ -17,8 +17,8 @@ class _CalState extends State<Cal> {
   String equation ="0";
   String result="0";
   String expression ="";
-  double equationFontSize =36;
-  double resultFontSize =51;
+  double equationFontSize =35;
+  double resultFontSize =50;
 
   buttonPressed(String buttonText){
     setState(() {
@@ -114,7 +114,7 @@ class _CalState extends State<Cal> {
                 children: <Widget>[
                   button("1", 2.5 ,Colors.cyanAccent),
                   button("2", 2.5 ,Colors.cyanAccent),
-                  button("3", 2.5 ,Colors.cyan),
+                  button("3", 2.5 ,Colors.cyanAccent),
                   button("+", 2.5 ,Colors.pinkAccent),
                 ],
               ),
